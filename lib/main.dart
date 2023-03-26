@@ -5,12 +5,13 @@ import 'package:flutter_complete_guide/question.dart';
 //   runApp(MyApp());
 // }
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return _MyAppState();
   }
 }
@@ -26,20 +27,20 @@ class _MyAppState extends State<MyApp> {
   }
 
   void _newFun() {
-    var x = null;
+    var x;
     print(x?['ma']);
   }
 
   @override
   Widget build(BuildContext context) {
     var questions = [
-      'What\'s your favorite color?',
+      'What\'s your favorite color 1?',
       'What\'s your favorite animal?',
     ];
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('My First App'),
+          title: const Text('My First App'),
         ),
         body: Column(
           children: [
@@ -55,8 +56,8 @@ class _MyAppState extends State<MyApp> {
               onPressed: () => print('Answer 2 chosen!'),
             ),
             ElevatedButton(
-              child: const Text('Answer 3'),
               onPressed: _newFun,
+              child: const Text('Answer 3'),
             ),
           ],
         ),
