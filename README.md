@@ -1,8 +1,8 @@
 # flutter_complete_guide
 
-A new Flutter project.
+A new learn Flutter project.
 
-## Getting Started
+## Getting Started 
 
 This project is a starting point for a Flutter application.
 
